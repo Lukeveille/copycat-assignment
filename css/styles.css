@@ -9,7 +9,7 @@ body {
 body > header {
     background-color: #06D6A0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
     padding: 0 20px;
 }
 footer {
@@ -94,4 +94,59 @@ section {
     font-size: 1.4em;
     font-weight: bold;
     margin: 22.5px 0;
+}
+
+@media only screen and (max-width: 549px) {
+
+    body > header {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+    ul {
+        float: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: block;
+        font-size: 1em;
+        padding: 0 8px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    h1 {
+        color: #000;
+        font-size: 1.5em;
+        border-bottom: 5px solid #EF476F;
+        display: inline-block;
+        padding-top: 5px;
+    
+    }
+    h2 {
+        font-size: 1.17em;
+    }
+    h3 {
+        margin: 0;
+        font-size: 30px;
+    }
+    p {
+        font-size: 1em;
+    }
+
+    #home {
+        background-color: #FFF;
+        display: block;
+        text-align: center;
+    }
+    #imgbox {
+        display: block;
+    }
+    #products img {
+        border: none;
+    }
+    #about div {
+        font-size: 1.2em;
+        margin: 19px;
+    }
 }
